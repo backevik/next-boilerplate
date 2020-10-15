@@ -6,10 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint:fix": "yarn lint -- --fix"
+    "lint:fix": "./node_modules/.bin/eslint --ignore-path .gitignore . --fix"
   },
   "lint-staged": {
-    "src/**/*.{ts,tsx}": "yarn lint:fix"
+    "*.{ts,tsx}": "yarn lint:fix"
   },
   "husky": {
     "hooks": {
