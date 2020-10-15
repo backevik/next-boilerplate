@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint:fix": "./node_modules/.bin/eslint --ignore-path .gitignore . --fix"
+    "lint:fix": "./node_modules/.bin/eslint --ignore-path .gitignore . --fix",
+    "test": "jest"
   },
   "lint-staged": {
     "*.{ts,tsx}": "yarn lint:fix"
@@ -18,14 +19,21 @@
   },
   "dependencies": {
     "next": "9.5.5",
+    "node-sass": "^4.14.1",
     "react": "16.14.0",
     "react-dom": "16.14.0"
   },
   "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.8",
+    "@types/jest": "^26.0.14",
     "@types/node": "^14.11.8",
     "@types/react": "^16.9.52",
     "@typescript-eslint/eslint-plugin": "^4.4.1",
     "@typescript-eslint/parser": "^4.4.1",
+    "babel-jest": "^26.5.2",
     "eslint": "^7.11.0",
     "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
@@ -33,8 +41,11 @@
     "eslint-plugin-react": "^7.21.4",
     "eslint-plugin-react-hooks": "^4.1.2",
     "husky": "^4.3.0",
+    "jest": "^26.5.3",
+    "jest-css-modules-transform": "^4.0.1",
     "lint-staged": "^10.4.0",
     "prettier": "^2.1.2",
+    "ts-jest": "^26.4.1",
     "typescript": "^4.0.3"
   }
 }
