@@ -1,10 +1,12 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/core';
 import Button from '@components/button';
 import React, { FC } from 'react';
 
 const World: FC = () => {
   return (
     <div>
-      <p>Hello world</p>
+      <p css={{ fontSize: '48px' }}>Hello world</p>
       <Button>Click me!</Button>
     </div>
   );
