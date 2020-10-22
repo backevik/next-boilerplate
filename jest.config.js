@@ -6,7 +6,7 @@ module.exports = {
     '^@pages(.*)$': '<rootDir>/pages$1',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js'],
-  testMatch: ['**/__tests__/*.(ts|tsx)'],
+  testMatch: ['**/__tests__/*.test.(ts|tsx)'],
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
     '.+\\.(css|sass|scss)$': 'jest-css-modules-transform',
