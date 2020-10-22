@@ -1,7 +1,13 @@
 {
   "presets": [
     "next/babel",
-    "@emotion/babel-preset-css-prop"
+    "@emotion/babel-preset-css-prop",
+    ["@babel/preset-env",
+      {"targets": {"node": "current"
+        }
+      }
+    ],
+    "@babel/preset-typescript"
   ],
   "plugins": ["emotion"]
 }
