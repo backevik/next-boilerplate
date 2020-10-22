@@ -6,7 +6,7 @@ import React, { FC } from 'react';
 const World: FC = () => {
   return (
     <div>
-      <p css={{ fontSize: '48px' }}>Hello world</p>
+      <p css={{ fontSize: '52px' }}>Hello world</p>
       <Button>Click me!</Button>
     </div>
   );
